@@ -1,0 +1,177 @@
+.header {
+    color: $light-color;
+}
+
+.main_menu {
+    font-family: $main-font;
+
+    a {
+        color: $light-color;
+    }
+}
+
+.headline {
+    text-align: center;
+
+    h1 {
+        font-family: $headline-font;
+        font-size: 35px;
+        font-weight: 700;
+        line-height: 45px;
+        text-transform: uppercase;
+        @media screen and(min-width: 576px) {
+            font-size: 45px;
+            line-height: 55px;
+        }
+        @media screen and(min-width: 768px) {
+            font-size: 45px;
+            line-height: 55px;
+        }
+        @media screen and(min-width: 992px) {
+            font-size: 65px;
+            line-height: 71px;
+        }
+    }
+
+    p {
+        font-family: $main-font;
+        font-size: 22px;
+        font-weight: 400;
+        line-height: 33px;
+    }
+}
+
+.advantages_list {
+    font-family: $main-font;
+    font-size: 14px;
+    text-align: center;
+
+    h2 {
+        font-size: 14px;
+        color: #2d3033;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-bottom: 25px;
+    }
+
+    p {
+        color: #6c7279;
+        font-weight: 400;
+        line-height: 21px;
+        margin: 0;
+    }
+}
+
+/*Works section*/
+.overlay {
+    font-size: 14px;
+    line-height: 14px;
+    color: $light-color;
+
+    h2 {
+        font-size: 14px;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-bottom: 13px;
+    }
+
+    span {
+        font-weight: 400;
+    }
+}
+
+/*Team Section*/
+.team_member {
+    h2 {
+        color: $header-color;
+        font-size: 22px;
+        font-weight: 400;
+    }
+
+    h3 {
+        color: $accent-color;
+        font-size: 13px;
+        font-weight: 400;
+        text-transform: uppercase;
+    }
+
+    p {
+        color: $text-color;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 21px;
+    }
+}
+
+/*Clients reviews*/
+.blockquote {
+    color: #ffffff;
+    font-family: $blockquote-font;
+    font-size: 36px;
+    font-style: italic;
+    line-height: 42px;
+}
+
+.author {
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 21px;
+    text-transform: uppercase;
+}
+
+/*Download section*/
+.download {
+    h2 {
+        color: #2d3033;
+        font-size: 28px;
+        font-weight: 300;
+        line-height: 30px;
+    }
+
+    span {
+        color: #2d3033;
+        font-size: 13px;
+        font-weight: 700;
+        line-height: 21px;
+        text-transform: uppercase;
+    }
+}
+
+/*Footer*/
+.footer {
+    h3 {
+        color: #ffffff;
+        font-size: 14px;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+    p {
+        opacity: 0.5;
+        color: #ffffff;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 22px;
+    }
+}
+
+.copyright {
+    span {
+        color: #808080;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 22.5px;
+    }
+
+    .fas {
+        color: $accent-color;
+    }
+
+    a {
+        color: $light-color;
+        &:hover {
+            color: $accent-color;
+        }
+    }
+}

@@ -1,0 +1,196 @@
+/*Advantages section*/
+.advantages {
+    padding: 120px 0 50px;
+}
+
+.advantages_list {
+    @include list-reset;
+
+    h2 {
+        margin: 34px 0 25px;
+    }
+}
+
+.advantage_item {
+    margin-bottom: 74px;
+    padding: 0 42px;
+    &:nth-of-type(1):before {
+        content: '';
+        display: inline-block;
+        background: url('../images/advantages/layer-48.png') 50% 50% no-repeat;
+        width: 100%;
+        height: 60px;
+    }
+
+    &:nth-of-type(2):before {
+        content: '';
+        display: inline-block;
+        background: url('../images/advantages/layer-44.png') 50% 50% no-repeat;
+        width: 100%;
+        height: 60px;
+    }
+
+    &:nth-of-type(3):before {
+        content: '';
+        display: inline-block;
+        background: url('../images/advantages/layer-47.png') 50% 50% no-repeat;
+        width: 100%;
+        height: 60px;
+    }
+
+    &:nth-of-type(4):before {
+        content: '';
+        display: inline-block;
+        background: url('../images/advantages/layer-46.png') 50% 50% no-repeat;
+        width: 100%;
+        height: 60px;
+    }
+
+    &:nth-of-type(5):before {
+        content: '';
+        display: inline-block;
+        background: url('../images/advantages/layer-43.png') 50% 50% no-repeat;
+        width: 100%;
+        height: 60px;
+    }
+
+    &:nth-of-type(6):before {
+        content: '';
+        display: inline-block;
+        background: url('../images/advantages/layer-45.png') 50% 50% no-repeat;
+        width: 100%;
+        height: 60px;
+    }
+}
+
+/*Works section*/
+.works_list {
+    @include list-reset;
+
+    li {
+        position: relative;
+        border-bottom: 1px solid $light-color;
+        @include transition;
+
+        @media screen and(min-width: 320px) {
+            border-right: 1px solid $light-color;
+        }
+
+        &:hover {
+            .overlay {
+                opacity: 1;
+            }
+        }
+    }
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: $overlay-color;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    opacity: 0;
+    @include transition;
+}
+
+/*Team section*/
+.team {
+    padding: 101px 0;
+}
+
+.team_members_list,
+.social_list {
+    @include list-reset;
+}
+
+.team_member {
+    margin-bottom: 40px;
+    @media screen and(min-width: 992px) {
+        margin-bottom: 0;
+    }
+
+    h2 {
+        margin: 30px 0 11px;
+    }
+
+    p {
+        margin: 21px 0 31px;
+    }
+}
+
+.social_list {
+    li {
+        display: inline-block;
+    }
+}
+
+.social_link {
+    color: $social-links-color;
+    width: 40px;
+    height: 40px;
+    border: 1px solid $social-links-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+
+    &:hover {
+        text-decoration: none;
+        color: $accent-color;
+        border-color: $accent-color;
+    }
+}
+
+/*Slider*/
+.reviews {
+    .carousel {
+        background-color: $slider-background;
+    }
+
+    .clients_say {
+        padding: 50px 30px 100px;
+        box-sizing: border-box;
+        @media screen and(min-width: 992px) {
+            padding: 114px 100px 107px 74px;
+        }
+    }
+}
+
+.client_photo {
+    object-fit: cover;
+}
+
+.blockquote {
+    p {
+        margin-bottom: 30px;
+    }
+}
+
+.carousel-indicators {
+    li {
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+    }
+}
+
+/*Download section*/
+.download {
+    padding: 100px 30px;
+    text-align: center;
+
+    h2 {
+        margin-bottom: 16px;
+    }
+
+    span {
+        display: block;
+        margin-bottom: 40px;
+    }
+}
